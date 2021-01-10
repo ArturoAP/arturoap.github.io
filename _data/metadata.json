@@ -1,0 +1,20 @@
+{
+  "title": "Tury.me",
+  "url": "https://tury.me/",
+  "description": "My first eleventy blog.",
+  "feed": {
+    "subtitle": "These are all my posts",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://tury.me/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://tury.me/feed/feed.json"
+  },
+  "author": {
+    "name": "Arturo Aldaco",
+    "email": "al_gato_16@hotmail.com",
+    "url": "https://tury.me/about-me/"
+  }
+}
