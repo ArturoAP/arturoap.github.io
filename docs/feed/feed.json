@@ -6,7 +6,7 @@
   "description": "My first eleventy blog.",
   "author": {
     "name": "Arturo Aldaco",
-    "url": "https://tury.me/about-me/"
+    "url": "https://tury.me/about/"
   },
   "items": [{
       "id": "https://tury.me/posts/fourthpost/",
