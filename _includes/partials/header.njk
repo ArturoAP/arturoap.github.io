@@ -1,0 +1,16 @@
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-3" href="{{ '/' | url }}">{{ metadata.title }}</a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+      {%- for entry in collections.all | eleventyNavigation %}
+        {# <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li> #}
+        <a href="{{ entry.url | url }}" class="navbar-item">{{ entry.title }}</a>
+      {%- endfor %}
+      </div>
+    </div>
+  </div>
+</nav>
