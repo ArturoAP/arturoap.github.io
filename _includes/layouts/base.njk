@@ -16,11 +16,15 @@
       {% include "partials/header.njk" %}
     </header>
 
-    <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
+    <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
+      <div class="container">
+        {{ content | safe }}
+      </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      {% include "partials/footer.njk" %}
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
