@@ -6,9 +6,14 @@ tags:
   - eleventy
   - github
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+So you've decided to build your site/blog using eleventy and now that you want to publish on github pages, you find out its not working, get constant 404s or get github build error messsages that leave you wondering, which config am I missing?, is there something wrong with my code?, isn't it supposed to just work? its just a static site after all.
+
+Well fear no more the following guide will show you the way on how to configure github and eleventy without the need of external tools, or cumbersome process.
+
+## No Jekyll
+
+The first step is to tell github that our site is not based on jekyll source, to do so you simply need to add an empty `.nojekyll` file to the root.
 
 ## Section Header
 
