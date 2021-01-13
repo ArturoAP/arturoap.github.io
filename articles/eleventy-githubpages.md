@@ -13,19 +13,30 @@ Well fear no more the following guide will show you the way on how to configure 
 
 ## No Jekyll
 
-The first step is to tell github that our site is not based on jekyll source, to do so you simply need to add an empty `.nojekyll` file to the root.
+The first step is to tell github that our site is not based on jekyll source, to do so you simply add an empty `.nojekyll` file to the root directory of the repo ... thats it.
 
-## Section Header
+## Github Source
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Next step is to configure where the static pages are located, Github repo settings allows you to choose any branch and a folder either `root` (default) or `docs` as the static pages source, for the purpose of this article we're going to go with `master` branch and `docs` folder.
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
+## Eleventy
 
-// Test with a line break above this line.
-console.log('Test');
+Now that our repo has been configured we have to tell Eleventy where to put our static pages, to do so we have to head over to `.eleventy.js` and modify/add the output configuration:
+
+``` js/6
+module.exports = function(eleventyConfig) {
+  return {
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "docs"
+    }
+  };
+};
 ```
+
+Next time you run eleventy it will output the generated files to docs folder, if it doesn't create the directory for you you can just add it manually.
+
+## Workflow
+
