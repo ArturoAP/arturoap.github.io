@@ -21,7 +21,7 @@ Next step is to configure where the static pages are located, Github repo settin
 
 ## Eleventy
 
-Now that our repo has been configured we have to tell Eleventy where to put our static pages, to do so we have to head over to `.eleventy.js` and modify/add the output configuration:
+Now that our repo has been configured we have to tell Eleventy where to put our static pages, to do so we head over to `.eleventy.js` and modify/add the output configuration:
 
 ``` js/6
 module.exports = function(eleventyConfig) {
