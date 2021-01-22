@@ -1,6 +1,6 @@
 ---
-title: Publish your eleventy site on github pages.
-description: Work around the github + jekyll settings and get your eleventy site up and running on githubpages.
+title: Publish your eleventy site on github pages
+description: Work around the github + jekyll settings and get your eleventy site up and running on githubpages
 date: 2021-01-10
 tags:
   - eleventy
@@ -23,7 +23,7 @@ Next step is to configure where the static pages are located, Github repo settin
 
 Now that our repo has been configured we have to tell Eleventy where to put our static pages, to do so we head over to `.eleventy.js` and modify/add the output configuration:
 
-``` js/6
+``` javascript/6
 module.exports = function(eleventyConfig) {
   return {
     dir: {
