@@ -20,3 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 pre {
   border-radius: 5px;
 }
+
+mark{
+  display: block;
+  background-color: #e0e0e0;
+}
