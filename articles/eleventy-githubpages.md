@@ -1,6 +1,7 @@
 ---
 title: Publish an eleventy site on github pages
 description: Work around the github + jekyll settings and get an eleventy site up and running on githubpages
+bannerImage: /img/eleventy-githubpages.png
 date: 2021-01-10
 tags:
   - eleventy
