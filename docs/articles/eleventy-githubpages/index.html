@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publish an eleventy site on github pages</title>
+    <title>How to publish an eleventy site on github pages</title>
     <meta name="description" content="Work around the github + jekyll settings and get an eleventy site up and running on githubpages">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,20 +35,19 @@
     </header>
 
     <main  class="tmpl-post" >
-      <div class="container is-max-desktop mt-3 mb-3">
         
 <section class="hero is-primary is-medium is-bold">
   <div class="hero-body article-banner" style="background-image: url(/img/eleventy-githubpages.png)">
-    <div class="container has-text-centered">
-    </div>
+    <div class="container has-text-centered"></div>
   </div>
 </section>
 
-<div class="card article">
-  <div class="card-content">
-    <div class="content">
-      <h1>Publish an eleventy site on github pages</h1>
-      <p>So you've decided to build your site/blog using eleventy and now that you want to publish on github pages, you find out its not working, get constant 404s or get github build error messsages that leave you wondering, which config am I missing?, is there something wrong with my code?, isn't it supposed to just work? its just a static site after all.</p>
+<div class="container is-widescreen mt-3 mb-3">
+  <div class="card article">
+    <div class="card-content">
+      <div class="content">
+        <h1>How to publish an eleventy site on github pages</h1>
+        <p>So you've decided to build your site/blog using eleventy and now that you want to publish on github pages, you find out its not working, get constant 404s or get github build error messsages that leave you wondering, which config am I missing?, is there something wrong with my code?, isn't it supposed to just work? its just a static site after all.</p>
 <p>Well fear no more the following guide will show you the way on how to configure github and eleventy without the need of external tools, or cumbersome process.</p>
 <h2 id="no-jekyll">No Jekyll <a class="direct-link" href="#no-jekyll">#</a></h2>
 <p>The first step is to tell github that our site is not based on jekyll source, to do so you simply add an empty <code>.nojekyll</code> file to the root directory of the repo ... thats it.</p>
@@ -69,6 +68,7 @@
 <h2 id="notes">Notes <a class="direct-link" href="#notes">#</a></h2>
 <p>If you find it diffcult to manually commit some files and ignore others while developing your site or writing posts you can follow <a href="https://gist.github.com/wizioo/c89847c7894ede628071">this tutorial</a> as a way to ignore the <code>docs</code> folder on some of your branches like I do on <code>development</code> but allow it in others such as <code>master</code> or <code>writing</code>.</p>
 
+      </div>
     </div>
   </div>
 </div>
@@ -76,7 +76,6 @@
 <hr>
 <ul>
 </ul>
-      </div>
     </main>
 
     <footer class="footer">

@@ -35,27 +35,60 @@
     </header>
 
     <main  class="tmpl-home" >
-      <div class="container is-max-desktop mt-3 mb-3">
         
+<div class="container is-widescreen mt-3 mb-3">
+    
 <h1>Articles</h1>
 
 
-<ol reversed class="postlist" style="counter-reset: start-from 2">
+<div class="container">
+  <div class="section">
+    <div id="app" class="row columns is-multiline">
+      
+        <div v-for="card in cardData" key="card.id" class="column is-4">
+          <div class="card large">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <a href="/articles/eleventy-githubpages/">
+                  <img src="/img/eleventy-githubpages.png" alt="Image">
+                </a>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 no-padding">
+                    <a href="/articles/eleventy-githubpages/">How to publish an eleventy site on github pages</a>
+                  </p>
+                  <p class="subtitle is-6">
+                    <time class="postlist-date" datetime="2021-01-10">10 Jan 2021</time>
+                  </p>
+                  <p>
+                    <span class="title is-6">
+                      
+                          <a href="/tags/articles/" class="post-tag">articles</a>
+                          <a href="/tags/eleventy/" class="post-tag">eleventy</a>
+                          <a href="/tags/github/" class="post-tag">github</a>
+                    </span>
+                  </p>
 
-  <li class="postlist-item">
-    <a href="/articles/eleventy-githubpages/" class="postlist-link">Publish an eleventy site on github pages</a>
-    <time class="postlist-date" datetime="2021-01-10">10 Jan 2021</time>
-    
-      <a href="/tags/articles/" class="post-tag">articles</a>
-      <a href="/tags/eleventy/" class="post-tag">eleventy</a>
-      <a href="/tags/github/" class="post-tag">github</a>
-  </li>
+                </div>
+              </div>
+              <div class="content">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
 
-</ol>
+    </div>
+  </div>
+</div>
 
 
 
-      </div>
+</div>
     </main>
 
     <footer class="footer">

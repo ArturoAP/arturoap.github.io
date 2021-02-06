@@ -30,3 +30,7 @@ mark{
   background-position: center;
   background-size: cover;
 }
+
+.card.article {
+  margin-top: -100px;
+}

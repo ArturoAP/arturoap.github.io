@@ -19,9 +19,7 @@
     </header>
 
     <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
-      <div class="container is-max-desktop mt-3 mb-3">
         {{ content | safe }}
-      </div>
     </main>
 
     <footer class="footer">
